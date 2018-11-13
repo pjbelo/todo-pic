@@ -9,5 +9,16 @@
   <%= image_tag(@todo.picture, width: 200) if @todo.picture.attached? %> 
 </p>
 
+<p>
+  <strong>Uploads:</strong> <br/>
+  <% if @todo.uploads.attached? %>
+    <% @todo.uploads.each do |upload| %>
+      <%= link_to upload.filename, upload, target: '_blank' %> <br/>
+    <% end %>
+  <% else %>
+    <p>no uploads</p>
+  <% end %>
+</p>
+
 <%= link_to 'Edit', edit_todo_path(@todo) %> |
 <%= link_to 'Back', todos_path %>
