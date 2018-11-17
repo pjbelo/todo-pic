@@ -12,7 +12,7 @@ Pre requisites: basic knowledge of Rails and Git
 
 Please visit the link to view tutorial on Medium:
 
-https://medium.com/@pjbelo/
+https://medium.com/@pjbelo/setting-up-rails-5-2-active-storage-using-google-cloud-storage-and-heroku-23df91e830f8
 
 You can check the commit history for the different code versions.
 
