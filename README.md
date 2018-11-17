@@ -1,24 +1,23 @@
-# README
+# Setting up Rails 5.2 Active Storage, using Google Cloud Storage and Heroku
+## Step-by-step Tutorial
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+![image](app/assets/images/img-01.jpg)
 
-Things you may want to cover:
 
-* Ruby version
+In this tutorial we will create a "Todo" rails app, attach pictures and other files to local disk and to Google Cloud Storage, using Rails Active Storage. Finally we will deploy our App to Heroku using Git.
 
-* System dependencies
+Level: beginner
 
-* Configuration
+Pre requisites: basic knowledge of Rails and Git
 
-* Database creation
+Please visit the link to view tutorial on Medium:
 
-* Database initialization
+https://medium.com/@pjbelo/
 
-* How to run the test suite
+You can check the commit history for the different code versions.
 
-* Services (job queues, cache servers, search engines, etc.)
+Please feel free to contact. I'll be glad to help if I can :-)
 
-* Deployment instructions
+Cheers,
 
-* ...
+Paulo
