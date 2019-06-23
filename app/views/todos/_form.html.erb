@@ -18,9 +18,10 @@
 
   <div class="field">
     <%= form.label :picture %>
-    <% if @todo.picture.attached? %>
-      <%= image_tag(@todo.picture, width: 50) %>
-      <br>
+    <% if todo.picture.attached? %>
+      <%= image_tag(todo.picture, width: 50) %><br/>
+      <%= link_to 'Remove picture', todo_delete_picture_attachment_path(todo),
+      method: :delete, data: { confirm: 'Are you sure?' } %><br/>
     <% end %>
     <%= form.file_field :picture %>
   </div>

@@ -61,6 +61,12 @@ class TodosController < ApplicationController
     end
   end
 
+  def delete_picture_attachment
+    @todo = Todo.find(params[:todo_id])
+    @todo.picture.purge
+    redirect_back(fallback_location: request.referer)
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_todo
@@ -69,6 +75,6 @@ class TodosController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def todo_params
-      params.require(:todo).permit(:task, :picture, uploads: [])
+      params.require(:todo).permit(:todo_id, :task, :picture, uploads: [])
     end
 end
