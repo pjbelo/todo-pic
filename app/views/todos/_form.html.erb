@@ -18,6 +18,10 @@
 
   <div class="field">
     <%= form.label :picture %>
+    <% if @todo.picture.attached? %>
+      <%= image_tag(@todo.picture, width: 50) %>
+      <br>
+    <% end %>
     <%= form.file_field :picture %>
   </div>
 
