@@ -67,6 +67,12 @@ class TodosController < ApplicationController
     redirect_back(fallback_location: request.referer)
   end
 
+  def delete_upload_attachment
+    @todo = Todo.find(params[:todo_id])
+    @todo.uploads.find_by_id(params[:upload_id]).purge
+    redirect_back(fallback_location: request.referer)
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_todo
