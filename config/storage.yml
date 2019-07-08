@@ -24,7 +24,7 @@ local:
 google:
   service: GCS
   project: todo-pic
-  credentials: <%= ENV['GOOGLE_APPLICATION_CREDENTIALS'] %>
+  credentials: <%= ENV['GOOGLE_APPLICATION_CREDENTIALS'].as_json %>
   bucket: todo-pic-pjbelo
 
 google_dev:
